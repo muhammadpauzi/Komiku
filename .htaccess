@@ -1,0 +1,14 @@
+Options -Multiviews
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^insert$ insert.php [L]
+RewriteRule ^update/(.*)$ update.php?slug=$1 [L]
+RewriteRule ^detail/(.*)$ detail.php?slug=$1 [L]
+
+
+# Redirect to 404 page with pretty url
+# RewriteRule ^404$ pages/404.php
+# ErrorDocument 404 http://localhost/Project/Komiku/404
