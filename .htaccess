@@ -10,5 +10,5 @@ RewriteRule ^detail/(.*)$ detail.php?slug=$1 [L]
 
 
 # Redirect to 404 page with pretty url
-# RewriteRule ^404$ pages/404.php
-# ErrorDocument 404 http://localhost/Project/Komiku/404
+RewriteRule ^404$ pages/pagenotfound.php
+ErrorDocument 404 http://localhost/Project/Komiku/404
