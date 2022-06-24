@@ -3,7 +3,7 @@ require 'app/init.php';
 
 if (isset($_GET['slug'])) {
     $slug = $_GET['slug'];
-    $comic = $App->getDetailDataComic($slug);
+    $comic = $app->getDetailDataComic($slug);
     if (empty($comic)) {
         // Redirect to index.php
         titleNotFound('pages/404.php', $slug);

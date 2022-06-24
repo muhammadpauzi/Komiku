@@ -6,9 +6,11 @@ class Comics extends App
         // Change judul to lowercase and replace whitespace to strip
         $slug = htmlspecialchars(strtolower(str_replace(' ', '-', $data['judul'])));
         $gambar = $this->_upload($slug);
+
         if (!$gambar) {
             return false;
         }
+
         // VALIDATIONS
         // If empty
         if (empty($data['judul']) || empty($data['penulis']) || empty($data['penerbit'])) {

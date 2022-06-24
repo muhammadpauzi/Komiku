@@ -6,5 +6,6 @@ require 'core/App.php';
 require 'core/Comics.php';
 require 'core/Message.php';
 require 'functions.php';
-$App = new App;
-$Comics = new Comics;
+
+$app = new App();
+$comics = new Comics();

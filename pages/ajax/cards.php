@@ -1,7 +1,7 @@
 <?php
 require '../../app/init.php';
 $keyword = $_GET['keyword'];
-$comics = $App->getAllDataComics($keyword);
+$comics = $app->getAllDataComics($keyword);
 if (empty($comics)) {
     echo '<p class="text-danger text-left py-5">Komik tidak ditemukan</p>';
 }

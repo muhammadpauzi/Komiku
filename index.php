@@ -1,6 +1,6 @@
 <?php
 require 'app/init.php';
-$comics = $App->getAllDataComics();
+$comics = $app->getAllDataComics();
 ?>
 <!DOCTYPE html>
 <html lang="en">

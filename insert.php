@@ -1,7 +1,7 @@
 <?php
 require 'app/init.php';
 if (isset($_POST['insert'])) {
-    $Comics->insert($_POST);
+    $comics->insert($_POST);
 }
 ?>
 <!DOCTYPE html>
