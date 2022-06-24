@@ -117,7 +117,7 @@ class Comics extends App
         $judul = $this->db->row_array();
 
         // If title comic has row in the table komik and not same with judul.. bla bla..
-        if ($this->db->row_count() > 0 && strtolower($data['judul']) != strtolower($judul['judul'])) {
+        if ($this->db->row_count() > 0 && strtolower($data['judul']) === strtolower($judul['judul'])) {
             Message::setMessage('insertMessage', 'Judul sudah terdaftar', 'danger');
             return false;
         }
